@@ -14,29 +14,86 @@
 
         <link rel="icon" type="image/png" href="favicon.png"> <!-- Icono de la pagina, falta -->
 
+        <style>
+            body{
+                background: rgba(203, 240, 255, 0.9)
+            }
+
+        </style>
     </head>
     <body>
+        <header>   
+
+            <nav>
+                <a href="#Inicio">Inicio</a>
+                <a href="#Historia">Historia</a>
+                <a href="#Productos">Productos</a>
+                <a href="#Contacto">Contacto</a>
+                <a href="https://www.instagram.com/valensia.alejandro/" target="_blank" rel="noopenernoreferrer">Instagram</a>
+                
+            </nav>
+        </header>
         <!--Esto es un comentario-->
 
-        <h1>Estilo que Transforma @NanoArte </h1>
+        <h1 id="Inicio">Estilo que Transforma @NanoArte </h1>
+
+    <main>
 
         <p>Descubre la fusión perfecta entre <strong>arte y cuidado ambiental</strong> en NanoArte. Cada pieza es una obra maestra, creada con atención meticulosa al detalle transformando empaques de tus alimentos favoritos en moda para llevar a otras partes.</p>
 
-        <h2>Historia detras de NanoArtes</h2>
+        <h2 id="Historia">Historia detras de NanoArtes</h2>
 
         <p>NanoArte nació de la pasión por el arte y la sostenibilidad. Nuestro fundador, inspirado por la belleza oculta en los empaques cotidianos, decidió darles una segunda vida a través del arte. Cada creación es un testimonio de creatividad y compromiso con el medio ambiente.</p>
         <ul>
-            <li>Moda Sostenible: </li>
-            <li>Arte Funcional:.</li>
-            <li>Compromiso Am</li>
+            <li>100% Hecho a mano </li>
+            <li>Material Reciclado</li>
+            <li>Diseños unicos</li>
         <ul>
-            <img
+        <img
         id="foto-imagen"
         width=""
         height=""
         title="Foto artista"
         alt="Una foto del artista detras de los productos"
-        src="">     
-    </body>
+        src="">
 
-    </html>
+        
+        <h3 id="Productos">productos</h3>
+        <p>Nuestros productos van desde bolsos y carteras hasta accesorios únicos, todos elaborados con materiales reciclados. Cada pieza es una declaración de estilo y conciencia ambiental.</p>
+        
+
+        <section> 
+            <h4 id="Contacto">Formulario de contacto<h4>
+
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>información personal</legend>
+                    <div>
+
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Example@gmail.com" required>
+                    
+                </fieldset>
+                <fieldset> 
+                    <legend>Teléfono</legend>
+
+                    <label for="numero">Nombre:
+                    <input type="tel" id="numero" name="Teléfono" placeholder="3124566780" required>
+                    </label>
+                </fieldset>
+                
+                <input type="submit" value="Enviar">
+            </form>
+
+        </section>
+    <body>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NanoArte. Todos los derechos reservados.</p>
+    </footer>
+</html>
