@@ -13,52 +13,18 @@
         <meta name="robots" content="index, follow">
         <meta name="theme-color" content="#4CAF50">
 
-        <link rel="icon" type="image/png" href="incon.png">
-
-        <style>
-            h1 {
-                  /* Color: hsl(60, 100%, 100%); */
-                color: rgb(0 0 0 / 70%);
-                
-            }
-
-            body {
-                background-color: #c8f3f3;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-            }
-
-            .link {
-                color:rgb(44, 92, 50)
-
-            }
-
-            .link:hover {
-                color: blue;
-            }
-
-            .link:active {
-                color: red;
-            }
-
-
-            p {
-                font-size: 18px;
-                line-height: 1.6;
-                color: #333333;
-                background-color: #cbf5ff;
-            }
-
-
-        </style>
+        <link rel="icon" type="image/png" href="./image/incon.png">
+        <link rel="stylesheet" href="style.css">
+        
     </head>
 
     <body>
         <header>   
 
-            <nav>
+            <nav class="menu">
                 <a class="link" href="#Inicio">Inicio</a>
+                <a class="link" href="Sproductos.html">Productos</a>                
                 <a class="link" href="#Historia">Historia</a>
-                <a class="link" href="#Productos">Productos</a>
                 <a class="link" href="#Infografía">Infografía</a>
                 <a class="link" href="#Contacto">Contacto</a>
                 <a class="link" href="https://www.instagram.com/valensia.alejandro/" target="_blank" rel="noopenernoreferrer">Instagram</a>
@@ -69,10 +35,19 @@
 
         <main>
 
-            <h1 id="Inicio">Estilo que Transforma @NanoArte </h1>
-            <p class>Descubre la fusión perfecta entre <strong>arte y cuidado ambiental</strong> en NanoArte. Cada pieza es una obra maestra, creada con atención meticulosa al detalle transformando empaques de tus alimentos favoritos en moda para llevar a otras partes.</p>
 
-            <h2 id="Historia">Historia detras de NanoArtes</h2>
+          <Section>
+            <div class="contenedor">
+
+              <h1 id="Inicio" class="titulo">Estilo que Transforma @NanoArte </h1>
+              <h2 class="subb">Descubre nuestra iniciativa:</h2>
+              <p class="descripcion">La fusión perfecta entre <strong>arte y cuidado ambiental</strong> la encuentras en NanoArte. Cada pieza es una obra maestra, creada con atención meticulosa al detalle transformando empaques de tus alimentos favoritos en moda para llevar a todas partes.</p>
+            </div>
+          </Section>
+
+
+
+            <h2 id="Historia" class="subtitulo">Historia detras de NanoArtes</h2>
        
 
             <p>NanoArte nació de la pasión por el arte y la sostenibilidad. Nuestro fundador, inspirado por la belleza oculta en los empaques cotidianos, decidió darles una segunda vida a través del arte. Cada creación es un testimonio de creatividad y compromiso con el medio ambiente.</p>
@@ -89,14 +64,14 @@
 
             <img
             id="foto-imagen"
-            width="800"
-            height="600"
-            title="Foto artista"
+            width="200"
+            height="400"
+            title="Foto del artista"
             alt="Una foto del artista detras de los productos"
-            src="tio.jpeg">
+            src="./image/tio.jpeg">
 
         
-            <h3 id="Productos">productos</h3>
+            <h3>productos</h3>
             <p>Nuestros productos van desde bolsos y carteras hasta accesorios únicos, todos elaborados con materiales reciclados. Cada pieza es una declaración de estilo y conciencia ambiental.</p>
         
             <section>
@@ -126,17 +101,14 @@
                 <form method="post" action="/">
 
                     <fieldset>
-
                         <legend>información personal</legend>
                         <div>
-
                             <label for="name">Nombre:</label>
-                            <input type="text" id="name" name="nombre" placeholder="Tu nombre completo" required>
+                            <input type="text" id="name" name="nombre" placeholder="Nombre completo" required>
                         </div>
 
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Example@gmail.com" required>
-                    
                     </fieldset>
 
                     <fieldset>
